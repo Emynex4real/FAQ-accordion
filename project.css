@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'WorkSans', sans-serif;
+}
+body{
+    position: relative;
+
+    min-height: 100vh;
+    /* border: 2px solid red; */
+}
+@font-face {
+    font-family: 'WorkSans';
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.dark-purple-container{
+    background-color: hsl(292, 42%, 14%);
+    height: 45vh;
+    width: 100%;
+}
+.light-purple-container{
+    background-color: hsl(275, 100%, 97%);
+    height: 55vh;
+}
+
+.full-content-body{
+    position: absolute;
+    background-color: white;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 0;
+    border-radius: 20px;
+    
+} 
+
+.content-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+hr {
+    border: 1px solid #ccc; 
+  }
+.faq-question{
+    /* height: 30px;
+    overflow: hidden; */
+    /* padding: 5px; */
+    
+}
+
+.faq-question-head{
+    font-weight: bold;
+    display: flex;
+    font-size: 1rem;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.faq-question-body{
+    font-size: .9rem;
+    line-height: 1.5;
+    height: 0px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    /* border: 2px solid red; */
+
+
+}
+.faq-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.faq-head{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.active{
+    height: 100%;
+}
+
+.close{
+    display: none;
+}
+
+.faq-question-body {
+    max-height: 0; 
+    overflow: hidden; 
+    opacity: 0; 
+    transition: max-height 1s ease-in-out;
+}
+
+.faq-question-body.active {
+    max-height: 500px; 
+    padding: 15px; 
+    opacity: 1; 
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%)};
+
+@media (max-width: 1440px){
+   
+}
+
+@media (max-width: 850px){
+    .full-content-body{
+        min-width: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px 0;
+        border-radius: 10px;
+    } 
+}
+
+
